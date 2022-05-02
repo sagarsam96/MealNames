@@ -1,0 +1,90 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  color: white;
+  font-family: Okra, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  min-height: 100vh;
+}
+
+button {
+  padding: 0.5rem;
+  background: white;
+  color: red;
+  border: none;
+  border-bottom: 2px solid red;
+  border-radius: 0px 8px 8px 0;
+  transition: transform ease 0.3s;
+  padding-right: 1rem;
+  outline: none;
+}
+
+button:active {
+  background-color: red;
+  color: white;
+  transform: translateY(3px);
+}
+
+input {
+  padding: 0.5rem 30% 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid red;
+  caret-color: red;
+  border-radius: 8px 0px 0px 8px;
+}
+
+input,
+button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 20px;
+}
+
+h5 {
+  color: black;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+  input,
+  button {
+    padding: 15px 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  input,
+  button {
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid red;
+  }
+  button {
+    width: 5em;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .loader {
+    padding: 10px;
+    margin-top: 70px;
+  }
+}
