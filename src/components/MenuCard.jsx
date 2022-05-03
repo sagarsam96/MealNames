@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import Styled from "styled-components";
-
+import Youtube from '../assets/youtube.png'
 const Card = Styled.div`
 border-radius: 8px;
 border: 2px solid red;
@@ -30,6 +30,11 @@ const Buffer = Styled.div`
 `;
 
 const MenuCard = ({ menu, index }) => {
+  const[flag, setFlag]= useState(true);
+
+  const toggle=()=>{
+    setFlag(!flag)
+  }
   return (
     <>
       <Buffer key={index}>
@@ -39,9 +44,17 @@ const MenuCard = ({ menu, index }) => {
               <img src={menu.strMealThumb} alt={menu.strMeal} />
             </div>
 
-            <div>
-              <h5>{menu.strMeal}</h5>
+            <div onClick={toggle} id="content">
+              {flag&&<h5>{menu.strMeal}</h5>}
+              {!flag&&
+              <>
+                <a href={menu.strYoutube} target="_blank" rel="noreferrer" >
+                <img id="yt" src={Youtube} alt="youtube icon"/>
+                </a>
+                <h5>{menu.strArea}</h5>
+              </>}
             </div>
+
           </div>
         </Card>
       </Buffer>
