@@ -19,6 +19,7 @@ margin: 5px;
 const Data = ({ query }) => {
   const [data, setData] = useState([]);
 
+
   const fetching = () => {
     query &&
       fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`)

@@ -21,7 +21,7 @@ transform: scale(1.02)
 `;
 
 const Buffer = Styled.div`
-  margin-top: 40px;
+  margin-top: 6em;
   max-height: 300px;
   max-width: 300px;
   min-height: 100px;
