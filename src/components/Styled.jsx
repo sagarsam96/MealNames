@@ -4,13 +4,19 @@ display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-gap: 10px;
 margin: 5px;
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
+  padding-bottom: 5em;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
+  padding-bottom: 5em;
+}
+@media only screen and (max-width: 500px) {
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
 }
 `;
 
@@ -20,7 +26,7 @@ border: 2px solid red;
 width: 100%;
 
 min-height: 200px;
-
+height: 100%;
 img{
   border-radius: 8px 8px 0 0;
 }
@@ -34,10 +40,10 @@ transform: scale(1.02)
 `;
 
 export const Buffer = Styled.div`
-  margin-top: 1em;
-  max-height: 300px;
+  margin-top: 3em;
+  max-height: 400px;
   max-width: 300px;
-  min-height: 100px;
+  min-height: 15em;
   /* margin-bottom: 10px; */
   padding: 0.5rem;
 `;

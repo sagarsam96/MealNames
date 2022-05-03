@@ -50,6 +50,7 @@ button {
 
 h5 {
   color: black;
+  padding: 0 1rem;
 }
 img {
   width: 100%;
@@ -62,6 +63,10 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* padding: auto 20px; */
+}
+#result{
+  padding-top: 30px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -79,10 +84,10 @@ img {
     border-bottom: 1px solid red;
   }
   button {
-    width: 5em;
+    width: 10em;
     border-radius: 8px;
     padding: 5px;
-    margin: 5px;
+    margin: 0 20px;
   }
   h2 {
     font-size: 28px;

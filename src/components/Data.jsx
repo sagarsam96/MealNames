@@ -19,9 +19,9 @@ const Data = ({ query }) => {
   return (
     <>
         {
-          query&&<h5>Search Results for {query} </h5>
+          query&&<h5 id="result">Search Results for {query} </h5>
         }
-      {!data && <h5 className="loader">No result found</h5>}
+        {!data && <h5 className="loader">No result found</h5>}
       <Wrapper>
         {data &&
           data.map((menu, index) => {
