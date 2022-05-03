@@ -1,21 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MenuCard from "./MenuCard";
 import Styled from "styled-components";
-
-const Wrapper = Styled.div`
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 10px;
-margin: 5px;
-@media only screen and (max-width: 850px) {
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-@media only screen and (max-width: 400px) {
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-`;
+import { Wrapper } from "./Styled";
 const Data = ({ query }) => {
   const [data, setData] = useState([]);
 
