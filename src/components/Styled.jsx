@@ -34,7 +34,7 @@ transform: scale(1.02)
 `;
 
 export const Buffer = Styled.div`
-  margin-top: 6em;
+  margin-top: 1em;
   max-height: 300px;
   max-width: 300px;
   min-height: 100px;

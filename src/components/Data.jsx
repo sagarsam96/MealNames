@@ -18,6 +18,9 @@ const Data = ({ query }) => {
 
   return (
     <>
+        {
+          query&&<h5>Search Results for {query} </h5>
+        }
       {!data && <h5 className="loader">No result found</h5>}
       <Wrapper>
         {data &&

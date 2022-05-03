@@ -27,6 +27,7 @@ const Header = ({ query, setQuery }) => {
           />
           <button onClick={() => buttonFunction()}> Search </button>
         </InputArena>
+        
       </HeadBar>
     </>
   );
